@@ -58,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				7BCF5DE02467F40F00649FC5 /* MainController.swift */,
+				7BCF5DF02468051E00649FC5 /* DetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -81,15 +82,14 @@
 		7BCF5DDB2467F40F00649FC5 /* Contoh 4 */ = {
 			isa = PBXGroup;
 			children = (
+				7BCF5DDC2467F40F00649FC5 /* AppDelegate.swift */,
+				7BCF5DDE2467F40F00649FC5 /* SceneDelegate.swift */,
 				7B0B56BF2470064B00E07BBF /* Model */,
 				7B0B56C02470065500E07BBF /* View */,
 				7B0B56C12470066000E07BBF /* Controller */,
-				7BCF5DDC2467F40F00649FC5 /* AppDelegate.swift */,
-				7BCF5DDE2467F40F00649FC5 /* SceneDelegate.swift */,
 				7BCF5DE52467F41100649FC5 /* Assets.xcassets */,
 				7BCF5DE72467F41100649FC5 /* LaunchScreen.storyboard */,
 				7BCF5DEA2467F41100649FC5 /* Info.plist */,
-				7BCF5DF02468051E00649FC5 /* DetailController.swift */,
 			);
 			path = "Contoh 4";
 			sourceTree = "<group>";

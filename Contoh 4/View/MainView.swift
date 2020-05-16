@@ -12,7 +12,11 @@ class MainView: UIView {
     
     let MainText: UILabel = {
         let label = UILabel()
-        label.text = "This is just a test"
+        label.text = "This is just a test. This is just a test. This is just a test. This is just a test. This is just a test. This is just a test. This is just a test. This is just a test."
+        label.font = UIFont.systemFont(ofSize: 16)
+        label.textColor = UIColor(red: 147/255, green: 16/255, blue: 216/255, alpha: 1)
+        label.textAlignment = .center
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -42,7 +46,8 @@ class MainView: UIView {
         self.addSubview(MainButton)
 
         self.MainText.topAnchor.constraint(equalTo: self.topAnchor, constant: 50).isActive = true
-        self.MainText.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 50).isActive = true
+        self.MainText.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 30).isActive = true
+        self.MainText.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -30).isActive = true
         
         self.MainImage.topAnchor.constraint(equalTo: self.MainText.bottomAnchor, constant: 16).isActive = true
         self.MainImage.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 16).isActive = true
