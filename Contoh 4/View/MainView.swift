@@ -62,6 +62,14 @@ class MainView: UIView {
         return tombol
     }()
     
+    let sampleTextField: UITextField = {
+        let textField = UITextField()
+        textField.placeholder = "Sample Textfield"
+        textField.borderStyle = .roundedRect
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        return textField
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -71,6 +79,7 @@ class MainView: UIView {
         self.Scroll.addSubview(MainButton)
         self.Scroll.addSubview(Picker)
         self.Scroll.addSubview(Tombol)
+        self.Scroll.addSubview(sampleTextField)
         
         self.Scroll.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         self.Scroll.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
@@ -86,6 +95,7 @@ class MainView: UIView {
         self.MainImage.rightAnchor.constraint(equalTo: self.Scroll.rightAnchor, constant: -16).isActive = true
         self.MainImage.widthAnchor.constraint(equalToConstant: self.frame.size.width).isActive = true
         self.MainImage.heightAnchor.constraint(equalToConstant: 1500).isActive = true
+        self.MainImage.centerXAnchor.constraint(equalTo: self.Scroll.centerXAnchor).isActive = true
         
         self.MainButton.leftAnchor.constraint(equalTo: self.Scroll.leftAnchor, constant: 64).isActive = true
         self.MainButton.rightAnchor.constraint(equalTo: self.Scroll.rightAnchor, constant: -64).isActive = true
@@ -98,11 +108,20 @@ class MainView: UIView {
         //self.Picker.rightAnchor.constraint(equalTo: self.Scroll.rightAnchor, constant: -30).isActive = true
         self.Picker.heightAnchor.constraint(equalToConstant: 200).isActive = true
         self.Picker.widthAnchor.constraint(equalToConstant: 350).isActive = true
+        self.Picker.centerXAnchor.constraint(equalTo: self.Scroll.centerXAnchor).isActive = true
         
         self.Tombol.topAnchor.constraint(equalTo: self.Picker.bottomAnchor, constant: 50).isActive = true
-        self.Tombol.leftAnchor.constraint(equalTo: self.Scroll.leftAnchor, constant: 30).isActive = true
-        self.Tombol.rightAnchor.constraint(equalTo: self.Scroll.rightAnchor, constant: -30).isActive = true
-        self.Tombol.bottomAnchor.constraint(equalTo: self.Scroll.bottomAnchor, constant: -50).isActive = true
+        //self.Tombol.leftAnchor.constraint(equalTo: self.Scroll.leftAnchor, constant: 30).isActive = true
+        //self.Tombol.rightAnchor.constraint(equalTo: self.Scroll.rightAnchor, constant: -30).isActive = true
+        //self.Tombol.bottomAnchor.constraint(equalTo: self.Scroll.bottomAnchor, constant: -50).isActive = true
+        self.Tombol.centerXAnchor.constraint(equalTo: self.Scroll.centerXAnchor).isActive = true
+        
+        self.sampleTextField.topAnchor.constraint(equalTo: self.Tombol.bottomAnchor, constant: 50).isActive = true
+        self.sampleTextField.leftAnchor.constraint(equalTo: self.Scroll.leftAnchor, constant: 30).isActive = true
+        self.sampleTextField.rightAnchor.constraint(equalTo: self.Scroll.rightAnchor, constant: -30).isActive = true
+        self.sampleTextField.bottomAnchor.constraint(equalTo: self.Scroll.bottomAnchor, constant: -50).isActive = true
+        self.sampleTextField.centerXAnchor.constraint(equalTo: self.Scroll.centerXAnchor).isActive = true
+
 
         
     }
