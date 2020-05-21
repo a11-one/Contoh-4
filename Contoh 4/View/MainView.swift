@@ -62,24 +62,27 @@ class MainView: UIView {
         return tombol
     }()
     
-    let sampleTextField: UITextField = {
+    let favoriteDayTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Sample Textfield"
         textField.borderStyle = .roundedRect
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
+
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+               
         self.addSubview(Scroll)
         self.Scroll.addSubview(MainText)
         self.Scroll.addSubview(MainImage)
         self.Scroll.addSubview(MainButton)
         self.Scroll.addSubview(Picker)
         self.Scroll.addSubview(Tombol)
-        self.Scroll.addSubview(sampleTextField)
+        self.Scroll.addSubview(favoriteDayTextField)
+
         
         self.Scroll.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         self.Scroll.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
@@ -116,11 +119,11 @@ class MainView: UIView {
         //self.Tombol.bottomAnchor.constraint(equalTo: self.Scroll.bottomAnchor, constant: -50).isActive = true
         self.Tombol.centerXAnchor.constraint(equalTo: self.Scroll.centerXAnchor).isActive = true
         
-        self.sampleTextField.topAnchor.constraint(equalTo: self.Tombol.bottomAnchor, constant: 50).isActive = true
-        self.sampleTextField.leftAnchor.constraint(equalTo: self.Scroll.leftAnchor, constant: 30).isActive = true
-        self.sampleTextField.rightAnchor.constraint(equalTo: self.Scroll.rightAnchor, constant: -30).isActive = true
-        self.sampleTextField.bottomAnchor.constraint(equalTo: self.Scroll.bottomAnchor, constant: -50).isActive = true
-        self.sampleTextField.centerXAnchor.constraint(equalTo: self.Scroll.centerXAnchor).isActive = true
+        self.favoriteDayTextField.topAnchor.constraint(equalTo: self.Tombol.bottomAnchor, constant: 50).isActive = true
+        self.favoriteDayTextField.leftAnchor.constraint(equalTo: self.Scroll.leftAnchor, constant: 30).isActive = true
+        self.favoriteDayTextField.rightAnchor.constraint(equalTo: self.Scroll.rightAnchor, constant: -30).isActive = true
+        self.favoriteDayTextField.bottomAnchor.constraint(equalTo: self.Scroll.bottomAnchor, constant: -50).isActive = true
+        self.favoriteDayTextField.centerXAnchor.constraint(equalTo: self.Scroll.centerXAnchor).isActive = true
 
 
         
