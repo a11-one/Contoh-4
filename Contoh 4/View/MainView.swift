@@ -38,9 +38,10 @@ class MainView: UIView {
     
     let MainButton: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
-        button.setTitle("Move", for: .normal)
-        button.backgroundColor = UIColor(red: 147/255, green: 16/255, blue: 216/255, alpha: 1)
-        button.setTitleColor(.white, for: .normal)
+        //button.setTitle("Move", for: .normal)
+        //button.backgroundColor = UIColor(red: 147/255, green: 16/255, blue: 216/255, alpha: 1)
+        //button.setTitleColor(.white, for: .normal)
+        button.setImage(UIImage(named: "image2"), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -101,10 +102,10 @@ class MainView: UIView {
         self.MainImage.centerXAnchor.constraint(equalTo: self.Scroll.centerXAnchor).isActive = true
         
         self.MainButton.leftAnchor.constraint(equalTo: self.Scroll.leftAnchor, constant: 64).isActive = true
-        self.MainButton.rightAnchor.constraint(equalTo: self.Scroll.rightAnchor, constant: -64).isActive = true
+        //self.MainButton.rightAnchor.constraint(equalTo: self.Scroll.rightAnchor, constant: -64).isActive = true
         self.MainButton.topAnchor.constraint(equalTo: self.MainImage.bottomAnchor, constant: 64).isActive = true
         //self.MainButton.bottomAnchor.constraint(equalTo: self.Scroll.bottomAnchor, constant: -64).isActive = true
-        self.MainButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        //self.MainButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         self.Picker.topAnchor.constraint(equalTo: self.MainButton.bottomAnchor, constant: 50).isActive = true
         //self.Picker.leftAnchor.constraint(equalTo: self.Scroll.leftAnchor, constant: 30).isActive = true
