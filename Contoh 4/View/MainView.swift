@@ -41,7 +41,7 @@ class MainView: UIView {
         //button.setTitle("Move", for: .normal)
         //button.backgroundColor = UIColor(red: 147/255, green: 16/255, blue: 216/255, alpha: 1)
         //button.setTitleColor(.white, for: .normal)
-        button.setImage(UIImage(named: "image2"), for: .normal)
+        button.setImage(UIImage(named: "image2")?.withRenderingMode(.alwaysOriginal), for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
