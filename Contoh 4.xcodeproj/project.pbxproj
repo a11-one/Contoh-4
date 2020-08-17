@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B0B56BE2470061200E07BBF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B56BD2470061200E07BBF /* MainView.swift */; };
+		7B9CA9FA24E98E0A005768FE /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9CA9F924E98E0A005768FE /* PageCell.swift */; };
 		7BCF5DDD2467F40F00649FC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCF5DDC2467F40F00649FC5 /* AppDelegate.swift */; };
 		7BCF5DDF2467F40F00649FC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCF5DDE2467F40F00649FC5 /* SceneDelegate.swift */; };
 		7BCF5DE12467F40F00649FC5 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCF5DE02467F40F00649FC5 /* MainController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		7B0B56BD2470061200E07BBF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7B9CA9F924E98E0A005768FE /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		7BCF5DD92467F40F00649FC5 /* Contoh 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contoh 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BCF5DDC2467F40F00649FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BCF5DDE2467F40F00649FC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				7BCF5DE02467F40F00649FC5 /* MainController.swift */,
 				7BCF5DF02468051E00649FC5 /* DetailController.swift */,
+				7B9CA9F924E98E0A005768FE /* PageCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			files = (
 				7BCF5DF12468051E00649FC5 /* DetailController.swift in Sources */,
 				7BCF5DE12467F40F00649FC5 /* MainController.swift in Sources */,
+				7B9CA9FA24E98E0A005768FE /* PageCell.swift in Sources */,
 				7BCF5DDD2467F40F00649FC5 /* AppDelegate.swift in Sources */,
 				7B0B56BE2470061200E07BBF /* MainView.swift in Sources */,
 				7BCF5DDF2467F40F00649FC5 /* SceneDelegate.swift in Sources */,
